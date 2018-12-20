@@ -13,6 +13,7 @@ public static class Settings {
         if(_resourcesManager == null)
         {
             _resourcesManager = Resources.Load("ResourcesManager") as ResourcesManager;
+            _resourcesManager.Init();
         }
 
         return _resourcesManager;
@@ -28,6 +29,14 @@ public static class Settings {
         EventSystem.current.RaycastAll(pointerEventData, results);
 
         return results;
+    }
+
+    public static void SetParentForCard(Transform cardTransform, Transform parentTransform)
+    {
+        cardTransform.SetParent(parentTransform);
+        cardTransform.localPosition = Vector3.zero;
+        cardTransform.localEulerAngles = Vector3.zero;
+        cardTransform.localScale = Vector3.one;
     }
 	
 }

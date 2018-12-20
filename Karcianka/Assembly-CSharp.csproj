@@ -100,10 +100,14 @@
     <Compile Include="Assets\Scripts\ElementImage.cs" />
     <Compile Include="Assets\Scripts\ElementInt.cs" />
     <Compile Include="Assets\Scripts\ElementText.cs" />
+    <Compile Include="Assets\Scripts\GameElements\Area.cs" />
+    <Compile Include="Assets\Scripts\GameElements\AreaLogic.cs" />
     <Compile Include="Assets\Scripts\GameElements\CardInstance.cs" />
+    <Compile Include="Assets\Scripts\GameElements\DropAreaLogic.cs" />
     <Compile Include="Assets\Scripts\GameElements\GE_Logic.cs" />
     <Compile Include="Assets\Scripts\GameElements\HandCard.cs" />
     <Compile Include="Assets\Scripts\GameElements\TableCard.cs" />
+    <Compile Include="Assets\Scripts\Holders\PlayerHolder.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IClickable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />

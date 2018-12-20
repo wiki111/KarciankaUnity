@@ -8,11 +8,7 @@ public class CardViz : MonoBehaviour
     public CardVizProperties[] properties;
     public GameObject statsHolder;
 
-    private void Start()
-    {
-        LoadCard(card);
-    }
-
+    
     public void LoadCard(Card c)
     {
 

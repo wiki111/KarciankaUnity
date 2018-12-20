@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLogic: {fileID: 11400000, guid: 81976d97eb7ed0041a7efbec30069ad8, type: 2}
+  viz: {fileID: 0}
 --- !u!114 &114297638170844396
 MonoBehaviour:
   m_ObjectHideFlags: 1
