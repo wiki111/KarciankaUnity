@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00b65759657a5db468890e4a7e86ff50, type: 3}
-  m_Name: CardEx2
+  m_Name: SpellCard
   m_EditorClassIdentifier: 
   cardType: {fileID: 11400000, guid: cccb8b3620c4425459b6748864b2bce2, type: 2}
   properties:

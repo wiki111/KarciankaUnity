@@ -8,5 +8,6 @@ public class SpellCard : CardType
     {
         base.OnSetType(viz);
         viz.statsHolder.SetActive(false);
+        viz.resourceHolder.SetActive(true);
     }
 }

@@ -61,22 +61,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Card.cs" />
-    <Compile Include="Assets\Scripts\CardProperties.cs" />
-    <Compile Include="Assets\Scripts\CardType.cs" />
-    <Compile Include="Assets\Scripts\CardViz.cs" />
-    <Compile Include="Assets\Scripts\CardVizProperties.cs" />
-    <Compile Include="Assets\Scripts\CreatureCard.cs" />
-    <Compile Include="Assets\Scripts\Draggable.cs" />
-    <Compile Include="Assets\Scripts\DropZone.cs" />
-    <Compile Include="Assets\Scripts\Element.cs" />
-    <Compile Include="Assets\Scripts\ElementImage.cs" />
-    <Compile Include="Assets\Scripts\ElementInt.cs" />
-    <Compile Include="Assets\Scripts\ElementText.cs" />
+    <Compile Include="Assets\Scripts\Card\Card.cs" />
+    <Compile Include="Assets\Scripts\Card\CardProperties.cs" />
+    <Compile Include="Assets\Scripts\Card\CardType.cs" />
+    <Compile Include="Assets\Scripts\Card\CardViz.cs" />
+    <Compile Include="Assets\Scripts\Card\CardVizProperties.cs" />
+    <Compile Include="Assets\Scripts\Card\CreatureCard.cs" />
+    <Compile Include="Assets\Scripts\Card\ResourceCard.cs" />
+    <Compile Include="Assets\Scripts\Card\SpellCard.cs" />
     <Compile Include="Assets\Scripts\GameElements\Area.cs" />
     <Compile Include="Assets\Scripts\GameElements\AreaLogic.cs" />
     <Compile Include="Assets\Scripts\GameElements\CardInstance.cs" />
     <Compile Include="Assets\Scripts\GameElements\DropAreaLogic.cs" />
+    <Compile Include="Assets\Scripts\GameElements\Element.cs" />
+    <Compile Include="Assets\Scripts\GameElements\ElementImage.cs" />
+    <Compile Include="Assets\Scripts\GameElements\ElementInt.cs" />
+    <Compile Include="Assets\Scripts\GameElements\ElementText.cs" />
     <Compile Include="Assets\Scripts\GameElements\GE_Logic.cs" />
     <Compile Include="Assets\Scripts\GameElements\HandCard.cs" />
     <Compile Include="Assets\Scripts\GameElements\TableCard.cs" />
@@ -115,7 +115,6 @@
     <Compile Include="Assets\Scripts\Scriptables2\Variables\TransformArrayVariable.cs" />
     <Compile Include="Assets\Scripts\Scriptables2\Variables\TransformVariable.cs" />
     <Compile Include="Assets\Scripts\Scriptables2\Variables\Vector3Variable.cs" />
-    <Compile Include="Assets\Scripts\SpellCard.cs" />
     <Compile Include="Assets\Scripts\States\Action.cs" />
     <Compile Include="Assets\Scripts\States\OnMouseClick.cs" />
     <Compile Include="Assets\Scripts\States\OnMouseHoldWithCard.cs" />
@@ -125,6 +124,8 @@
     <Compile Include="Assets\Scripts\Turns\Phase.cs" />
     <Compile Include="Assets\Scripts\Turns\PlayerControlPhase.cs" />
     <Compile Include="Assets\Scripts\Turns\Turn.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Draggable.cs" />
+    <Compile Include="Assets\Scripts\Utilities\DropZone.cs" />
     <Compile Include="Assets\Scripts\Utilities\Selected.cs" />
     <Compile Include="Assets\Scripts\Utilities2\FindAssetsByType.cs" />
     <Reference Include="UnityEditor.StandardEvents">

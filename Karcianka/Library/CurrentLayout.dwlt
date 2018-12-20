@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 113
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 114
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 115
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Turns/Phases
+    - Assets/Game/Cards
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Game/Turns/Phases
+  - Assets/Game/Cards
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\Maciej\Documents\KarciankaUnity\Karcianka
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 10330000
-    m_LastClickedID: 13072
-    m_ExpandedIDs: 00000000b6090000300a0000d20a0000520c0000d00c0000563000000633000000ca9a3b
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: 920b0000
+    m_LastClickedID: 2962
+    m_ExpandedIDs: 000000008e0a0000fc0a0000920b0000f80b00006e0c0000200d0000360d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b6090000300a0000d20a0000d00c0000
+    m_ExpandedIDs: 000000008e0a0000fc0a0000920b0000f80b00006e0c0000200d00008e0d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,7 +392,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000
+    m_ExpandedInstanceIDs: c623000000000000080a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,20 +480,20 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac0d0000
-    m_LastClickedID: 3500
-    m_ExpandedIDs: e4fbffff00000000860d0000900d00009a0d0000
+    m_SelectedIDs: 0cfbffff
+    m_LastClickedID: -1268
+    m_ExpandedIDs: 02fbffff0cfbffff3afbffff00000000040e0000360e0000640e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Overlay Canvas
-      m_OriginalName: Overlay Canvas
+      m_Name: Selected Card
+      m_OriginalName: Selected Card
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3462
+      m_UserData: 3638
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -531,14 +531,14 @@ MonoBehaviour:
     height: 562
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 3911.21434337325
+  lastFramingTime: 2622.526678041483
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1201.8947, y: 676.9218, z: 392.3067}
+    m_Target: {x: 818.8447, y: 653.45667, z: 16.809917}
     speed: 2
-    m_Value: {x: 1201.8947, y: 676.9218, z: 392.3067}
+    m_Value: {x: 818.8447, y: 653.45667, z: 16.809917}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -570,9 +570,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2104.5361
+    m_Target: 1386.0645
     speed: 2
-    m_Value: 2104.5361
+    m_Value: 1386.0645
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -685,6 +685,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 668.5
-    width: 1535
+    width: 1536
     height: 354
   m_PersistentViewDataDictionary: {fileID: 0}

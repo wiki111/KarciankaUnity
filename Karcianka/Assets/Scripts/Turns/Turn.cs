@@ -8,7 +8,7 @@ public class Turn : ScriptableObject {
     [System.NonSerialized]
     public int currentPhaseIndex = 0;
     public PhaseVariable currentPhase;
-    public string turnName;
+    public PlayerHolder player;
 
     public bool Execute()
     {

@@ -8,5 +8,6 @@ public class CreatureCard : CardType
     {
         base.OnSetType(viz);
         viz.statsHolder.SetActive(true);
+        viz.resourceHolder.SetActive(true);
     }
 }

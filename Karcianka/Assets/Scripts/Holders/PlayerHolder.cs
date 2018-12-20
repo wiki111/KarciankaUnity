@@ -13,4 +13,5 @@ public class PlayerHolder : ScriptableObject {
     public SO.TransformVariable tableGrid;
     public GE_Logic handLogic;
     public GE_Logic tableLogic;
+    public string username;
 }

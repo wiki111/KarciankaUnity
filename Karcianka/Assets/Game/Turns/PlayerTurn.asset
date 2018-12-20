@@ -14,6 +14,5 @@ MonoBehaviour:
   phases:
   - {fileID: 11400000, guid: 7d436019593bfe04bb7a722f19ddd80f, type: 2}
   - {fileID: 11400000, guid: 667147fc078e4824697aea9e0a95fbae, type: 2}
-  onPhaseComplete: {fileID: 11400000, guid: a54816161b86fb74e8e96b1c5a0a4cc0, type: 2}
   currentPhase: {fileID: 11400000, guid: 77d712642efa38a479ee0365379e9db5, type: 2}
-  turnName: Player Turn
+  player: {fileID: 11400000, guid: 28f26245b7ce12e45a7182f45056c78a, type: 2}
