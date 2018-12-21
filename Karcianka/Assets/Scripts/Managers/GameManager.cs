@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour {
         {
             switchPlayer = false;
             playerOneHolder.LoadPlayer(all_players[1]);
+            currentPlayer = all_players[1];
             playerTwoHolder.LoadPlayer(all_players[0]);
         }
 
@@ -71,12 +72,13 @@ public class GameManager : MonoBehaviour {
                 Settings.SetParentForCard(go.transform, all_players[j].currentHolders.handGrid.value.transform);
                 all_players[j].cardsOnHand.Add(instance);
             }
+            Settings.RegisterEvent("Created cards for player " + all_players[j].username, Color.cyan);
         }
-        
     }
 
     public void EndCurrentPhase()
     {
+        Settings.RegisterEvent(turns[turnIndex].name + " is ending. ", Color.cyan );
         turns[turnIndex].EndCurrentPhase();
     }
 

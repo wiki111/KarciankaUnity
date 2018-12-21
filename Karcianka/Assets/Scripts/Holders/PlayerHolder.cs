@@ -16,6 +16,7 @@ public class PlayerHolder : ScriptableObject {
     [System.NonSerialized]
     public int resourcesDroppedInCurrentTurn;
     public bool isHumanPlayer;
+    public Color playerColor;
 
     public GE_Logic handLogic;
     public GE_Logic tableLogic;
@@ -44,6 +45,8 @@ public class PlayerHolder : ScriptableObject {
         }
 
         cardsOnTable.Add(inst);
+
+        Settings.RegisterEvent(username + " used card " + inst.viz.card.name + " for " + inst.viz.card.cost, playerColor);
     }
 
     public int NonUsedCards()

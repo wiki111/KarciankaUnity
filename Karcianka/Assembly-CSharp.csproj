@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\Card\CreatureCard.cs" />
     <Compile Include="Assets\Scripts\Card\ResourceCard.cs" />
     <Compile Include="Assets\Scripts\Card\SpellCard.cs" />
+    <Compile Include="Assets\Scripts\Console\ConsoleHook.cs" />
+    <Compile Include="Assets\Scripts\Console\ConsoleManager.cs" />
     <Compile Include="Assets\Scripts\GameElements\Area.cs" />
     <Compile Include="Assets\Scripts\GameElements\AreaLogic.cs" />
     <Compile Include="Assets\Scripts\GameElements\CardInstance.cs" />

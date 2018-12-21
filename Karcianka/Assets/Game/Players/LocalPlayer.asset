@@ -23,9 +23,9 @@ MonoBehaviour:
   - ResourceCard
   - ResourceCard
   - ResourceCard
-  handGrid: {fileID: 11400000, guid: 19722054fc18b9c469868edb2e805c02, type: 2}
-  tableGrid: {fileID: 11400000, guid: 53d4ce47ea0a8504c87e77501c167dba, type: 2}
-  resourcesGrid: {fileID: 11400000, guid: f82bf6d95385d734880e8f55f505917f, type: 2}
+  isHumanPlayer: 1
+  playerColor: {r: 1, g: 0, b: 0.7276478, a: 1}
   handLogic: {fileID: 11400000, guid: e914b6d0d2d5df945a085f63f000fb2c, type: 2}
   tableLogic: {fileID: 11400000, guid: 81976d97eb7ed0041a7efbec30069ad8, type: 2}
   username: Ravi
+  resourcesPerTurn: 1

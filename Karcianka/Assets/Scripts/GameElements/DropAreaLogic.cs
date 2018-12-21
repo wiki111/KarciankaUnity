@@ -36,6 +36,7 @@ public class DropAreaLogic : AreaLogic
                 Settings.SetParentForCard(card.Get().transform, resourcesGrid.value.transform);
                 Settings.gameManager.currentPlayer.AddResourceCard(card.Get().gameObject);
                 card.Get().currentLogic = cardDownLogic;
+                Settings.RegisterEvent( Settings.gameManager.currentPlayer.username + " dropped resources card " + card.Get().viz.card.name, Settings.gameManager.currentPlayer.playerColor);
             }
             card.Get().gameObject.SetActive(true);
         }

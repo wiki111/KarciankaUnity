@@ -19,6 +19,7 @@ MonoBehaviour:
   - ResourceCard
   - ResourceCard
   isHumanPlayer: 0
+  playerColor: {r: 1, g: 0, b: 0, a: 1}
   handLogic: {fileID: 11400000, guid: 81976d97eb7ed0041a7efbec30069ad8, type: 2}
   tableLogic: {fileID: 11400000, guid: 81976d97eb7ed0041a7efbec30069ad8, type: 2}
   username: Melkor

@@ -7,6 +7,17 @@ public static class Settings {
 
     public static GameManager gameManager;
     private static ResourcesManager _resourcesManager;
+    private static ConsoleHook _consoleHook;
+
+    public static void RegisterEvent(string s, Color color = default(Color))
+    {
+        if(_consoleHook == null)
+        {
+            _consoleHook = Resources.Load("ConsoleHook") as ConsoleHook;
+        }
+
+        _consoleHook.RegisterEvent(s, color);
+    }
 
     public static ResourcesManager GetResourcesManager()
     {
