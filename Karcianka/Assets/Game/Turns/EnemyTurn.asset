@@ -15,3 +15,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 667147fc078e4824697aea9e0a95fbae, type: 2}
   currentPhase: {fileID: 11400000, guid: 77d712642efa38a479ee0365379e9db5, type: 2}
   player: {fileID: 11400000, guid: f534fac98fe8ea840b0285da7144aaf8, type: 2}
+  startActions:
+  - {fileID: 11400000, guid: ec15430daadc3b44284f79cf2c6dd728, type: 2}

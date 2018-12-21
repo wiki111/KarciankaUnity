@@ -5,6 +5,7 @@ public class CardInstance : MonoBehaviour, IClickable
 {
     public GE_Logic currentLogic;
     public CardViz viz;
+    public bool isFlatfooted;
 
     void Start()
     {

@@ -8,8 +8,18 @@ public class BattlePhaseStartCheck : Condition
     {
         bool isValid = false;
         GameManager gm = GameManager.singleton;
+        PlayerHolder playerHolder = gm.currentPlayer;
+        int count = gm.currentPlayer.cardsOnTable.Count;
 
-        if(gm.currentPlayer.cardsOnTable.Count > 0)
+        for (int i = 0; i < playerHolder.cardsOnTable.Count; i++)
+        {
+            if (playerHolder.cardsOnTable[i].isFlatfooted)
+            {
+                count--;
+            }
+        }
+        
+        if(count > 0)
         {
             isValid = true;
         }

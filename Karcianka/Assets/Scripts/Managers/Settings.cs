@@ -52,7 +52,13 @@ public static class Settings {
 
     public static void DropCreatureCard(Transform cardTransform, Transform parentTransform, CardInstance cardInst)
     {
+        cardInst.isFlatfooted = true;
+        //Any special card on drop abilities
         SetParentForCard(cardTransform, parentTransform);
+        if(cardInst.isFlatfooted)
+        {
+            cardTransform.localEulerAngles = new Vector3(0, 0, 90);
+        }
         gameManager.currentPlayer.UseResourcesCards(cardInst.viz.card.cost);
         gameManager.currentPlayer.DropCard(cardInst);
     }

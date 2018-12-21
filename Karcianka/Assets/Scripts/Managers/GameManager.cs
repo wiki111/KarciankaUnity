@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public State currentState;
     public PlayerHolder currentPlayer;
+    [System.NonSerialized]
     public PlayerHolder[] all_players;
     public GameObject cardPrefab;
     public Turn[] turns;
@@ -22,6 +23,11 @@ public class GameManager : MonoBehaviour {
     private void Awake()
     {
         singleton = this;
+        all_players = new PlayerHolder[turns.Length];
+        for (int i = 0; i < turns.Length; i++)
+        {
+            all_players[i] = turns[i].player;
+        }
     }
 
     private void Start()
@@ -51,6 +57,10 @@ public class GameManager : MonoBehaviour {
             {
                 turnIndex = 0;
             }
+
+            currentPlayer = turns[turnIndex].player;
+            //The current player has changed here (?)
+            turns[turnIndex].OnTurnStart();
             turnText.value = turns[turnIndex].player.username;
             onTurnChanged.Raise();
         }

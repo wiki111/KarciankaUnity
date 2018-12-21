@@ -9,6 +9,20 @@ public class Turn : ScriptableObject {
     public int currentPhaseIndex = 0;
     public PhaseVariable currentPhase;
     public PlayerHolder player;
+    public PlayerAction[] startActions;
+
+    public void OnTurnStart()
+    {
+        if(startActions == null || startActions.Length == 0)
+        {
+            return;
+        }
+
+        foreach (PlayerAction action in startActions)
+        {
+            action.Execute(player);
+        }
+    }
 
     public bool Execute()
     {

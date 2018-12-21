@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Actions\MouseActions\OnMouseClick.cs" />
     <Compile Include="Assets\Scripts\Actions\MouseActions\OnMouseHoldWithCard.cs" />
     <Compile Include="Assets\Scripts\Actions\MouseActions\OnMouseOver.cs" />
+    <Compile Include="Assets\Scripts\Actions\PlayerActions\PlayerAction.cs" />
+    <Compile Include="Assets\Scripts\Actions\PlayerActions\ResetFlatFootedCards.cs" />
     <Compile Include="Assets\Scripts\Card\Card.cs" />
     <Compile Include="Assets\Scripts\Card\CardProperties.cs" />
     <Compile Include="Assets\Scripts\Card\Types\CardType.cs" />
