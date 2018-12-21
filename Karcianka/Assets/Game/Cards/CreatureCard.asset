@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: CreatureCard
   m_EditorClassIdentifier: 
   cardType: {fileID: 11400000, guid: ddba53203d011c74a84ba02a6381ab77, type: 2}
+  cost: 2
   properties:
   - stringVal: Samurai
     intVal: 0
@@ -26,7 +27,7 @@ MonoBehaviour:
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: f9ab33f2f7497a8409f44a95d9c752ea, type: 2}
   - stringVal: 
-    intVal: 10
+    intVal: 2
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: e021dbe2464bab24f80a82bc863c7a92, type: 2}
   - stringVal: 

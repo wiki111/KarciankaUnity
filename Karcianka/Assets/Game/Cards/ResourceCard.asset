@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: ResourceCard
   m_EditorClassIdentifier: 
   cardType: {fileID: 11400000, guid: ad9fe5bdbf0956941bb1a27e702cd6bb, type: 2}
+  cost: 0
   properties:
   - stringVal: Mana
     intVal: 0
@@ -25,3 +26,7 @@ MonoBehaviour:
     intVal: 0
     sprite: {fileID: 21300000, guid: a798132f087b6c845bf4ccc4a65cc980, type: 3}
     element: {fileID: 11400000, guid: 4b991edb7cf255e46b039d4834a8cc69, type: 2}
+  - stringVal: 
+    intVal: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: e021dbe2464bab24f80a82bc863c7a92, type: 2}

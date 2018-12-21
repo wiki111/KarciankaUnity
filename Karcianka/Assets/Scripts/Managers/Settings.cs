@@ -38,5 +38,12 @@ public static class Settings {
         cardTransform.localEulerAngles = Vector3.zero;
         cardTransform.localScale = Vector3.one;
     }
+
+    public static void DropCreatureCard(Transform cardTransform, Transform parentTransform, CardInstance cardInst)
+    {
+        SetParentForCard(cardTransform, parentTransform);
+        gameManager.currentPlayer.UseResourcesCards(cardInst.viz.card.cost);
+        gameManager.currentPlayer.DropCard(cardInst);
+    }
 	
 }
