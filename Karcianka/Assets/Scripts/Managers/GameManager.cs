@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour {
     public CardHolders playerTwoHolder;
     public bool switchPlayer;
 
+    public static GameManager singleton;
+
+    private void Awake()
+    {
+        singleton = this;
+    }
+
     private void Start()
     {
         Settings.gameManager = this;

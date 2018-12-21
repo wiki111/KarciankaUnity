@@ -4,6 +4,9 @@ using System.Collections;
 [CreateAssetMenu(menuName = "Turns/Battle Phase")]
 public class BattlePhase : Phase
 {
+    public State battlePhaseControl;
+    public Condition isBattleValid;
+
     public override bool IsComplete()
     {
         if (forceExit)
@@ -27,8 +30,11 @@ public class BattlePhase : Phase
     {
         if (!isInit)
         {
+            forceExit = !isBattleValid.IsValid();
             Debug.Log(this.name + " starts");
-            Settings.gameManager.SetState(null);
+            Settings.gameManager.SetState(
+                (!forceExit) ? battlePhaseControl : null
+            );
             Settings.gameManager.onPhaseChanged.Raise();
             isInit = true;
         }

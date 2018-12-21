@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\Card\Types\SpellCard.cs" />
     <Compile Include="Assets\Scripts\Card\Vizualization\CardViz.cs" />
     <Compile Include="Assets\Scripts\Card\Vizualization\CardVizProperties.cs" />
+    <Compile Include="Assets\Scripts\Conditions\BattlePhaseStartCheck.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Condition.cs" />
     <Compile Include="Assets\Scripts\Console\ConsoleHook.cs" />
     <Compile Include="Assets\Scripts\Console\ConsoleManager.cs" />
     <Compile Include="Assets\Scripts\GameElements\Area Logic\Area.cs" />
