@@ -15,6 +15,8 @@ public class PlayerHolder : ScriptableObject {
     public CardHolders currentHolders;
     [System.NonSerialized]
     public int resourcesDroppedInCurrentTurn;
+    [System.NonSerialized]
+    public List<CardInstance> attackingCards = new List<CardInstance>();
     public bool isHumanPlayer;
     public Color playerColor;
 

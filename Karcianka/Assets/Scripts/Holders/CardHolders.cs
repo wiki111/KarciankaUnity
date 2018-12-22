@@ -7,6 +7,16 @@ public class CardHolders : ScriptableObject
     public SO.TransformVariable handGrid;
     public SO.TransformVariable tableGrid;
     public SO.TransformVariable resourcesGrid;
+    public SO.TransformVariable battleLine;
+
+    public void SetCardOnBattleLine(CardInstance cardInst)
+    {
+        Vector3 position = cardInst.viz.gameObject.transform.position;
+        Settings.SetParentForCard(cardInst.viz.gameObject.transform, battleLine.value.transform);
+        position.z = cardInst.viz.gameObject.transform.position.z;
+        position.y = cardInst.viz.gameObject.transform.position.y;
+        cardInst.viz.gameObject.transform.position = position;
+    }
 
     public void LoadPlayer(PlayerHolder playerHolder)
     {
