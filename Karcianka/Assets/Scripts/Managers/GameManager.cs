@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour {
     public CardHolders playerOneHolder;
     public CardHolders playerTwoHolder;
     public bool switchPlayer;
+    
+    public PlayerStats[] playerStatsArray;
 
     public static GameManager singleton;
 
@@ -35,6 +37,10 @@ public class GameManager : MonoBehaviour {
         Settings.gameManager = this;
         SetupPlayers();
         CreateStartingCards();
+        for (int i = 0; i < all_players.Length; i++)
+        {
+
+        }
         turnText.value = turns[turnIndex].player.username;
         onTurnChanged.Raise();
     }
@@ -44,9 +50,8 @@ public class GameManager : MonoBehaviour {
         if (switchPlayer)
         {
             switchPlayer = false;
-            playerOneHolder.LoadPlayer(all_players[1]);
-            currentPlayer = all_players[1];
-            playerTwoHolder.LoadPlayer(all_players[0]);
+            playerOneHolder.LoadPlayer(all_players[0],playerStatsArray[0]);
+            playerTwoHolder.LoadPlayer(all_players[1], playerStatsArray[1]);
         }
 
         bool isComplete = turns[turnIndex].Execute();
@@ -101,15 +106,21 @@ public class GameManager : MonoBehaviour {
 
     void SetupPlayers()
     {
-        foreach(PlayerHolder player in all_players)
+        for (int i = 0; i < all_players.Length; i++)
         {
-            if (player.isHumanPlayer)
+            if (all_players[i].isHumanPlayer)
             {
-                player.currentHolders = playerOneHolder;
+                all_players[i].currentHolders = playerOneHolder;
             }
             else
             {
-                player.currentHolders = playerTwoHolder;
+                all_players[i].currentHolders = playerTwoHolder;
+            }
+
+            if(i < 2)
+            {
+                all_players[i].playerStats = playerStatsArray[i];
+                playerStatsArray[i].player.LoadPlayerOnStats();
             }
         }
     }

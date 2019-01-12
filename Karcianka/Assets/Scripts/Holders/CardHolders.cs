@@ -18,7 +18,7 @@ public class CardHolders : ScriptableObject
         cardInst.viz.gameObject.transform.position = position;
     }
 
-    public void LoadPlayer(PlayerHolder playerHolder)
+    public void LoadPlayer(PlayerHolder playerHolder, PlayerStats stats)
     {
         foreach (CardInstance cardInstance in playerHolder.cardsOnTable)
         {
@@ -34,5 +34,8 @@ public class CardHolders : ScriptableObject
         {
             Settings.SetParentForCard(cardInstance.cardObject.transform, resourcesGrid.value.transform);
         }
+
+        playerHolder.playerStats = stats;
+        playerHolder.LoadPlayerOnStats();
     }
 }

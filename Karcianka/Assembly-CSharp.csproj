@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Holders\ResourceHolder.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IClickable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Settings.cs" />
     <Compile Include="Assets\Scripts\Scriptables\Custom UI\EventEditor.cs" />

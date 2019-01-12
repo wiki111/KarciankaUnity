@@ -19,10 +19,14 @@ public class PlayerHolder : ScriptableObject {
     public List<CardInstance> attackingCards = new List<CardInstance>();
     public bool isHumanPlayer;
     public Color playerColor;
+    public PlayerStats playerStats;
+
+    public int health = 20;
 
     public GE_Logic handLogic;
     public GE_Logic tableLogic;
     public string username;
+    public Sprite avatar;
     public int resourcesCount
     {
         get { return currentHolders.resourcesGrid.value.GetComponentsInChildren<CardViz>().Length; }
@@ -123,5 +127,23 @@ public class PlayerHolder : ScriptableObject {
             resourcesList[i].cardObject.transform.localEulerAngles = euler;
         }
         resourcesDroppedInCurrentTurn = 0;
+    }
+
+    public void DoDamage(int value)
+    {
+        health -= value;
+        if(playerStats != null)
+        {
+            playerStats.UpdateHealth();
+        }
+    }
+
+    public void LoadPlayerOnStats()
+    {
+        if(playerStats != null)
+        {
+            playerStats.player = this;
+            playerStats.UpdateAll();
+        }
     }
 }
