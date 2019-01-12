@@ -55,10 +55,7 @@ public static class Settings {
         cardInst.isFlatfooted = true;
         //Any special card on drop abilities
         SetParentForCard(cardTransform, parentTransform);
-        if(cardInst.isFlatfooted)
-        {
-            cardTransform.localEulerAngles = new Vector3(0, 0, 90);
-        }
+        cardInst.SetFlatfooted(true);
         gameManager.currentPlayer.UseResourcesCards(cardInst.viz.card.cost);
         gameManager.currentPlayer.DropCard(cardInst);
     }

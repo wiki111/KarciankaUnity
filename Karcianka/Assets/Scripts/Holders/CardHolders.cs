@@ -9,6 +9,9 @@ public class CardHolders : ScriptableObject
     public SO.TransformVariable resourcesGrid;
     public SO.TransformVariable battleLine;
 
+    [System.NonSerialized]
+    public PlayerHolder playerHolder;
+
     public void SetCardOnBattleLine(CardInstance cardInst)
     {
         Vector3 position = cardInst.viz.gameObject.transform.position;
@@ -18,8 +21,15 @@ public class CardHolders : ScriptableObject
         cardInst.viz.gameObject.transform.position = position;
     }
 
+    public void SetCardDown(CardInstance cardInst)
+    {
+        Settings.SetParentForCard(cardInst.viz.gameObject.transform, tableGrid.value.transform);
+    }
+
     public void LoadPlayer(PlayerHolder playerHolder, PlayerStats stats)
     {
+        this.playerHolder = playerHolder;
+
         foreach (CardInstance cardInstance in playerHolder.cardsOnTable)
         {
             Settings.SetParentForCard(cardInstance.viz.gameObject.transform, tableGrid.value.transform);

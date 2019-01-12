@@ -21,6 +21,7 @@ public class PlayerHolder : ScriptableObject {
     public Color playerColor;
     public PlayerStats playerStats;
 
+    [System.NonSerialized]
     public int health = 20;
 
     public GE_Logic handLogic;
@@ -33,8 +34,11 @@ public class PlayerHolder : ScriptableObject {
     }
     
     public int resourcesPerTurn = 1;
-    
 
+    private void OnEnable()
+    {
+        health = 20;
+    }
 
     public void AddResourceCard(GameObject cardObject)
     {
@@ -43,7 +47,7 @@ public class PlayerHolder : ScriptableObject {
         resourcesList.Add(resourceHolder);
     }
 
-    public void DropCard(CardInstance inst)
+    public void DropCard(CardInstance inst, bool registerEvent = true)
     {
         if (cardsOnHand.Contains(inst))
         {
@@ -52,7 +56,10 @@ public class PlayerHolder : ScriptableObject {
 
         cardsOnTable.Add(inst);
 
-        Settings.RegisterEvent(username + " used card " + inst.viz.card.name + " for " + inst.viz.card.cost, playerColor);
+        if (registerEvent)
+        {
+            Settings.RegisterEvent(username + " used card " + inst.viz.card.name + " for " + inst.viz.card.cost, playerColor);
+        }
     }
 
     public int NonUsedCards()
@@ -146,4 +153,5 @@ public class PlayerHolder : ScriptableObject {
             playerStats.UpdateAll();
         }
     }
+
 }

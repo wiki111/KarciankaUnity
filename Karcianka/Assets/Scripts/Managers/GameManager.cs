@@ -125,5 +125,16 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public PlayerHolder GetEnemyOf(PlayerHolder p)
+    {
+        for (int i = 0; i < all_players.Length; i++)
+        {
+            if(all_players[i] != p)
+            {
+                return all_players[i];
+            }
+        }
+        return null;
+    }
     
 }

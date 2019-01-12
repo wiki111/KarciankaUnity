@@ -131,6 +131,7 @@
     <Compile Include="Assets\Scripts\Scriptables\Variables\Vector3Variable.cs" />
     <Compile Include="Assets\Scripts\States\State.cs" />
     <Compile Include="Assets\Scripts\Turns\Phases\BattlePhase.cs" />
+    <Compile Include="Assets\Scripts\Turns\Phases\BattleResolvePhase.cs" />
     <Compile Include="Assets\Scripts\Turns\Phases\Phase.cs" />
     <Compile Include="Assets\Scripts\Turns\Phases\PlayerControlPhase.cs" />
     <Compile Include="Assets\Scripts\Turns\Phases\ResetCurrentPlayerResources.cs" />

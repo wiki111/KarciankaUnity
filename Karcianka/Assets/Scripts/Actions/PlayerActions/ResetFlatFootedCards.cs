@@ -11,8 +11,7 @@ public class ResetFlatFootedCards : PlayerAction
         {
             if (card.isFlatfooted)
             {
-                card.viz.transform.localEulerAngles = Vector3.zero;
-                card.isFlatfooted = false;
+                card.SetFlatfooted(false);
             }
         }
     }

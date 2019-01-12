@@ -7,6 +7,21 @@ public class CardInstance : MonoBehaviour, IClickable
     public CardViz viz;
     public bool isFlatfooted;
 
+    public void SetFlatfooted(bool isFlat)
+    {
+        isFlatfooted = isFlat;
+        if (isFlatfooted)
+        {
+            transform.localEulerAngles = new Vector3(0, 0, 90);
+            Debug.Log("Card was flatfooted !");
+        }
+        else
+        {
+            transform.localEulerAngles = new Vector3(0,0,0);
+        }
+        
+    }
+
     void Start()
     {
         viz = GetComponent<CardViz>();
